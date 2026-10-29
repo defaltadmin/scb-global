@@ -1,0 +1,11 @@
+name = "siddiqui-scb-global-router"
+main = "worker.js"
+
+compatibility_date = "2026-10-29"
+
+# Route on the zone that owns siddiqui.mscarabia.com:
+# siddiqui.mscarabia.com/scb-global/*  →  this Worker
+
+# Pages deployment URL of this site (from the Cloudflare Pages project)
+# Can also be set as a Worker secret: wrangler secret put PAGES_URL
+PAGES_URL = "https://scb-global.<account>.pages.dev"
